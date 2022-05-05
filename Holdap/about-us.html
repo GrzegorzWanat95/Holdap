@@ -15,17 +15,17 @@
     </div>
     <div class="col-12">
         <div class="top-margin"></div>
-        <div id="top-parent" class="container-fluid">
+        <div id="top-parent" class="container-fluid col-12">
             <div id="top-child" class="row">
-                <div id="logo-field" class="col-xl-8 col-lg-8 col-md-12 col-sm-12 d-flex justify-content-start justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center justify-content-center align-items-center">
+                <div id="logo-field" class="col-xl-8 col-lg-12 col-md-12 col-sm-12 justify-content-start justify-content-xl-start justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center align-items-center">
                     <a href="./index.html"><img id="logo" class="img-fluid" src="./img/logo.png" alt="Holdap logo"></a>
                 </div>
-                <div id="button-left" class="col-xl-2 col-lg-2 col-md-12 col-sm-12 d-flex justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center align-items-center">
+                <div id="button-left" class="col-xl-2 col-lg-2 col-md-12 col-sm-12 d-flex d-none d-xxl-flex d-xl-flex d-lg-none d-md-none d-sm-none justify-content-xl-end justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center align-items-center">
                     <a routerLink="/account">
-                        <div class="trapezoid-stroked-button">Zaloguj się</div>
+                        <div id="reverse-button" class="trapezoid-stroked-button"><div class="fix">Zaloguj się</div></div>
                     </a>
                 </div>
-                <div id="button-right" class="col-xl-2 col-lg-2 col-md-12 col-sm-12 d-flex justify-content-xl-start justify-content-lg-start justify-content-md-center justify-content-sm-center  justify-content-center align-items-center">
+                <div id="button-right" class="col-xl-2 col-lg-2 col-md-12 col-sm-12 d-none d-xxl-flex d-xl-flex d-lg-none d-md-none d-sm-none justify-content-xl-start justify-content-lg-center justify-content-md-center justify-content-sm-center  justify-content-center align-items-center">
                     <a routerLink="/account">
                         <div class="trapezoid-stroked-button">Zarejestruj się</div>
                     </a>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="top-margin"></div>
-        <div class="navigation container-fluid">
+        <div class="navigation container-fluid d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none d-none">
             <div class="menu row">
                 <div class="option col-xxl-1 col-xl-1 col-lg-4 col-md-4 col-sm-12"><a class="nav-link text-dark" href="./index.html">Start</a></div>
                 <div class="option col-xxl-1 col-xl-1 col-lg-4 col-md-4 col-sm-12"><a class="nav-link text-dark" href="./about-us.html">O nas</a></div>
@@ -42,6 +42,28 @@
                 <div class="option col-xxl-1 col-xl-1 col-lg-4 col-md-4 col-sm-12"><a class="nav-link text-dark" href="./become-a-partner.html">Zostań partnerem</a></div>
                 <div class="option col-xxl-1 col-xl-1 col-lg-4 col-md-4 col-sm-12"><a class="nav-link text-dark" href="./help.html">Pomoc</a></div>
             </div>
+            <img src='./img/bar-2.png' class="bar img-fluid d-none d-xxl-inline d-xl-none d-lg-none d-md-none d-sm-none" alt="Navigation bar">
+        </div>
+        <div class="navigation container-fluid d-xxl-none d-xl-none d-lg-inline d-md-inline d-sm-inline i-inline">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-primary p-4">
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="#">Zaloguj</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="#">Zarejestruj się</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./index.html">Start</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./about-us.html">O nas</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./how-it-works.html">Jak to działa?</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./why-is-it-worth.html">Dlaczego warto?</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./become-a-partner.html">Zostań partnerem</a></div>
+                  <div class="menu-sm col-sm-12"><a class="nav-link text-light" href="./help.html">Pomoc</a></div>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
             <img src='./img/bar-2.png' class="bar img-fluid d-none d-xxl-inline d-xl-inline d-lg-none d-md-none d-sm-none" alt="Navigation bar">
         </div>
         <div class="top-margin"></div>
@@ -63,7 +85,7 @@
                     </div>
               </div>
               <div id="img-field" class="img-fluid col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <div class="frame col-xxl-8 col-xl-9 col-lg-9 col-md-9 col-sm-9"><a href="#"> <img id="screen" src="./img/people.png" alt="image of people"></a></div>
+                  <div class="frame col-xxl-8 col-xl-9 col-lg-9 col-md-9 col-sm-9"><img id="screen" src="./img/people.png" alt="image of people"></div>
               </div>
             </div>
             <div class="bottom-margin row"></div>
